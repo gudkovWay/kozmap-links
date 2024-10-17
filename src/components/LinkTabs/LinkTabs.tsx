@@ -17,7 +17,7 @@ export const LinkTabs = () => {
     <div
       className='flex flex-col w-full h-full border-black rounded-md shadow-lg shadow-neutral-900 bg-neutral-800 pb-4'
     >
-      <div className='flex flex-row h-full w-full gap-2 p-4 '>
+      <div className='flex flex-row h-full w-full gap-2 p-2 md:p-4'>
         <Link
           href='/?tab=kozmapLinks'
           className={`w-full text-center underline-offset-4 underline transition-all delay-100 ${currentTab === 'kozmapLinks' ? 'decoration-neutral-50 font-bold' : 'decoration-neutral-800 font-medium hover:decoration-neutral-200'}`}
@@ -39,13 +39,13 @@ export const LinkTabs = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
-          className='w-full h-full flex flex-col gap-2 pt-4 '
+          className='w-full min-h-full flex flex-col gap-2 pt-4'
         >
           {tabs[currentTab].map((link) => (
             <Link
               href={link.href}
               key={link.id}
-              className='w-full bg-neutral-900 p-4 rounded-md hover:shadow-lg hover:shadow-neutral-900 transition-all delay-100'
+              className='w-full bg-neutral-900 p-2 md:p-4 rounded-md hover:shadow-lg hover:shadow-neutral-900 transition-all delay-100'
             >
               {link.name}
             </Link>

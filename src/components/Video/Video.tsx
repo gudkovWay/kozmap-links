@@ -18,20 +18,18 @@ export const Video = () => {
   }, [activeTab]);
 
   return (
-    <AnimatePresence mode='wait'>
+    <AnimatePresence mode='popLayout'>
       <motion.video
         key={currentTab}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.15 }}
         ref={videoRef}
-        width='320'
-        height='240'
         preload='auto'
         autoPlay
         loop
-        className='rounded-3xl size-full max-h-sm max-w-sm'
+        className='rounded-3xl size-full max-h-max md:max-w-sm max-w-[100vw]'
       >
         <track default kind='captions' srcLang='en' src='SUBTITLE_PATH' />
         {currentTab === '/kozmapLinks' ? (
