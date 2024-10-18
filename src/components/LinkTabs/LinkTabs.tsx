@@ -15,8 +15,9 @@ export const LinkTabs = () => {
           Kozmap Links
         </Link>
         <Link
-          href='https://'
+          href='https://oracle.monster/'
           target='_blank'
+          rel='noreferrer'
           className='w-full text-center underline-offset-4 underline transition-all delay-100 decoration-neutral-500 font-medium hover:decoration-neutral-200'
         >
           Oracle Links
@@ -26,9 +27,11 @@ export const LinkTabs = () => {
       <div className='w-full min-h-full flex flex-col gap-2 pt-4'>
         {kozmapLinks.map((link) => (
           <Link
-            href={link.href}
+            href={link.href || ''}
+            target='_blank'
+            rel='noreferrer'
             key={link.id}
-            className='w-full bg-neutral-900 p-2 md:p-4 rounded-md hover:shadow-lg hover:shadow-neutral-900 transition-all delay-100'
+            className={`w-full p-2 md:p-4 rounded-md hover:shadow-lg hover:shadow-neutral-900 transition-all delay-100 ${link.href ? 'cursor-pointer bg-neutral-900 hover:bg-neutral-700' : 'cursor-not-allowed bg-neutral-500'}`}
           >
             {link.name}
           </Link>

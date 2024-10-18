@@ -4,7 +4,7 @@ export const Video = () => {
       preload='auto'
       autoPlay
       loop
-      className='rounded-3xl size-full max-h-max md:max-w-sm max-w-[100vw]'
+      className='rounded-3xl size-full max-h-max md:max-w-lg max-w-[100vw]'
     >
       <track default kind='captions' srcLang='en' src='SUBTITLE_PATH' />
       <source src='/kozm.mp4' type='video/mp4' />
