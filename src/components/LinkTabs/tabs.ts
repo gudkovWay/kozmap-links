@@ -79,7 +79,85 @@ export const kozmapLinks = [{
 export const oracleLinks = [
   {
     id: 1,
-    name: 'Oracle on Telegram',
-    href: 'https://t.me/kozmap'
+    name: 'Oracle Support on Telegram',
+    icon: 'Telegram',
+    href: 'вставлю'
+  },
+
+  {
+    id: 2,
+    name: 'Oracle Support on Signal',
+    icon: 'Signal',
+    href: 'вставлю'
+  },
+
+  {
+    id: 3,
+    name: 'Oracle Support on Matrix (Element)',
+    icon: 'Element',
+    href: 'вставлю'
+  },
+
+  {
+    id: 4,
+    name: 'Oracle Support on SimpleX',
+    icon: 'Simplex',
+    href: 'вставлю'
+  },
+
+  {
+    id: 5,
+    name: 'Oracle BlackList {TELEGRAM}',
+    icon: 'Telegram',
+    href: 'вставлю'
+  },
+
+  {
+    id: 6,
+    name: 'Oracle WhiteList on Telegram [PAUSED]',
+    icon: 'Telegram',
+    href: 'вставлю'
+  },
+
+  {
+    id: 7,
+    name: 'Oracle Market on Telegram [PAUSED]',
+    icon: 'Telegram',
+    href: 'вставлю'
+  },
+
+  {
+    id: 8,
+    name: 'Oracle NewsPaper',
+    icon: 'Telegram',
+    href: 'вставлю'
+  },
+
+  {
+    id: 9,
+    name: 'Oracle\'s Signal Hub- 1',
+    icon: 'Signal',
+    href: 'вставлю'
+  },
+
+  {
+    id: 10,
+    name: 'Oracle\'s Signal Hub - 2',
+    icon: 'Signal',
+    href: 'вставлю'
+  },
+
+  {
+    id: 11,
+    name: 'Oracle\'s Matrix Hub',
+    icon: 'Element',
+    href: 'вставлю'
+  },
+
+  {
+    id: 12,
+    name: 'Oracle\'s SimpleX Hub',
+    icon: 'Simplex',
+    href: 'вставлю'
   }
 ];
