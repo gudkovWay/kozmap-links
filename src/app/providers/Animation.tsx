@@ -88,7 +88,7 @@ const AnimationProvider: FC<IProps> = ({ children }) => {
   }, [showIntro]);
 
   return (
-    <div className='min-h-screen bg-gradient-to-br from-orange-500 to-neutral-900 relative overflow-hidden'>
+    <div className='min-h-screen bg-gradient-to-br from-red-800 to-neutral-900 relative overflow-hidden'>
       <AnimatePresence mode='wait'>
         {showIntro ? (
           <motion.div
