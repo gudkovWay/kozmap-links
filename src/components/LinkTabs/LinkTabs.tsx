@@ -5,7 +5,7 @@ import { oracleLinks } from './tabs';
 export const LinkTabs = () => {
   return (
     <div
-      className='flex flex-col w-full h-full border-black rounded-md shadow-lg shadow-neutral-900 bg-neutral-800 pb-4'
+      className='flex flex-col w-full h-full border-black rounded-md shadow-lg shadow-neutral-900 bg-neutral-800 pb-4 px-2 md:px-0'
     >
       <div className='flex flex-row h-full w-full gap-2 p-2 md:p-4'>
         <Link
@@ -17,7 +17,7 @@ export const LinkTabs = () => {
           Oracle Links
         </Link>
         <Link
-          href='https://oracle.monster/'
+          href='https://kozmap.guru'
           target='_blank'
           rel='noreferrer'
           className='w-full text-center underline-offset-4 underline transition-all delay-100 decoration-neutral-500 font-medium hover:decoration-neutral-200'

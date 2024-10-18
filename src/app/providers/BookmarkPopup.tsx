@@ -5,6 +5,7 @@ import { Bookmark, X } from 'lucide-react';
 
 export const BookmarkPopup = () => {
   const [isShown, setIsShown] = useState(true);
+  const [isDisabledPointerEvents, setIsDisabledPointerEvenets] = useState(false);
 
   useEffect(() => {
     document.body.classList.add('noScroll');
@@ -12,6 +13,7 @@ export const BookmarkPopup = () => {
 
   const closePopup = () => {
     setIsShown(false);
+    setIsDisabledPointerEvenets(true);
     document.body.classList.remove('noScroll');
   };
 
@@ -19,7 +21,7 @@ export const BookmarkPopup = () => {
     <AnimatePresence>
       {isShown && (
         <motion.div
-          className='fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm bg-black/30'
+          className={`fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm bg-black/30 ${isDisabledPointerEvents && 'pointer-events-none'}`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

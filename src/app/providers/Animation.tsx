@@ -104,7 +104,7 @@ const AnimationProvider: FC<IProps> = ({ children }) => {
               className='absolute inset-0 pointer-events-none'
             />
             <h1 className='text-4xl md:text-6xl font-bold text-center relative z-10'>
-              {'Welcome'.split('').map((char, index) => (
+              {'Welcome Back'.split('').map((char, index) => (
                 <motion.span
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -119,12 +119,27 @@ const AnimationProvider: FC<IProps> = ({ children }) => {
                 </motion.span>
               ))}
               <br />
-              {'home'.split('').map((char, index) => (
+              {'to'.split('').map((char, index) => (
                 <motion.span
-                  key={index + 7} // Учитываем, что "Welcome" состоит из 7 символов
+                  key={index}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: (index + 7) * 0.05 }} // Начинаем задержку позже
+                  transition={{ duration: 0.5, delay: (index + 10) * 0.05 }} // Начинаем задержку позже
+                  className='inline-block shimmer-text'
+                  style={{
+                    color: index % 3 === 0 ? '#D1D5DB' : (index % 3 === 1 ? '#9CA3AF' : '#FFFFFF')
+                  }}
+                >
+                  {char === ' ' ? '\u00A0' : char}
+                </motion.span>
+              ))}
+              <br />
+              {'Oracle'.split('').map((char, index) => (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: (index + 15) * 0.05 }}
                   className='inline-block shimmer-text'
                   style={{
                     color: index % 3 === 0 ? '#D1D5DB' : (index % 3 === 1 ? '#9CA3AF' : '#FFFFFF')
