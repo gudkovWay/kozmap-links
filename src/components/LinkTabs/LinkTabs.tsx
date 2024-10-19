@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { oracleLinks } from './tabs';
+import { kozmapLinks } from './tabs';
 
 export const LinkTabs = () => {
   return (
@@ -14,20 +14,20 @@ export const LinkTabs = () => {
           rel='noreferrer'
           className='w-full text-center underline-offset-4 underline transition-all delay-100 decoration-neutral-50 font-bold'
         >
-          Oracle Links
+          Kozmap Links
         </Link>
         <Link
-          href='https://kozmap.guru'
+          href='https://oracle.monster/'
           target='_blank'
           rel='noreferrer'
           className='w-full text-center underline-offset-4 underline transition-all delay-100 decoration-neutral-500 font-medium hover:decoration-neutral-200'
         >
-          Kozmap Links
+          Oracle Links
         </Link>
       </div>
 
       <div className='w-full min-h-full flex flex-col gap-2 pt-4'>
-        {oracleLinks.map((link) => (
+        {kozmapLinks.map((link) => (
           <Link
             href={link.href || ''}
             target='_blank'

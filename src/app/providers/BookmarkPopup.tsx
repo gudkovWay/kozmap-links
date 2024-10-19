@@ -27,7 +27,7 @@ export const BookmarkPopup = () => {
           exit={{ opacity: 0 }}
         >
           <motion.div
-            className='bg-gradient-to-br from-neutral-400 to-red-500 rounded-lg shadow-lg p-6 max-w-md w-full'
+            className='bg-gradient-to-br from-purple-200 to-orange-400 rounded-lg shadow-lg p-6 max-w-md w-full'
             initial={{ scale: 0.8, y: 50, opacity: 0 }}
             animate={{ scale: 1, y: 0, opacity: 1 }}
             exit={{ scale: 0.8, y: 50, opacity: 0 }}
@@ -50,8 +50,8 @@ export const BookmarkPopup = () => {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
-              <Bookmark className='w-16 h-16 mx-auto mb-4 text-red-600' />
-              <h2 className='text-2xl font-bold text-center mb-4 text-red-700'>
+              <Bookmark className='w-16 h-16 mx-auto mb-4 text-orange-500' />
+              <h2 className='text-2xl font-bold text-center mb-4 text-orange-600'>
                 Never Lose Us! <br /> Bookmark Now for Instant Access!
               </h2>
               <p className='text-center text-neutral-800 mb-6'>
@@ -61,12 +61,12 @@ export const BookmarkPopup = () => {
               </p>
               <div className='flex justify-center space-x-4'>
                 <motion.button
-                  className='px-4 py-2 bg-red-700 text-white rounded-full font-medium hover:bg-red-800 transition-colors'
+                  className='px-4 py-2 bg-orange-700 text-white rounded-full font-medium hover:bg-orange-800 transition-colors'
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={closePopup}
                 >
-                  BOOKMARK ORACLE RIGHT NOW!
+                  BOOKMARK KOZMAP RIGHT NOW!
                 </motion.button>
               </div>
             </motion.div>
