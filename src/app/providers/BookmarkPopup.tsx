@@ -55,7 +55,7 @@ export const BookmarkPopup = () => {
                 Never Lose Us! <br /> Bookmark Now for Instant Access!
               </h2>
               <p className='text-center text-neutral-800 mb-6'>
-                Don’t lose Oracle!
+                Don’t lose Kozmap!
                 <br />
                 Add our site to your browser’s bookmarks now to stay connected, even in case of a complete shutdown.
               </p>
